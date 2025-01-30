@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+#wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+#time, #play, #weather {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#time div, #weather div {
+    width: 200px;
+    border: 3px solid #d7adff;
+    text-align: center;
+    color: #d7adff;
+    font-size: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#time div:hover {
+    background-color: #d7adff;
+    color: #018eba;
+    opacity: .8;
+    text-shadow: 0 0 4px rgba(1, 142, 146, 0.72), 0 0 14px rgba(1, 142, 146, 0.45);
+    box-shadow: 0 0 1rem #d7adff;
+    transform: scale(1.02);
+}
+#weather div:hover {
+    box-shadow: 0 0 1rem #d7adff;
+    transform: scale(1.02);
+}
+#play {
+    position: relative;
+    justify-content: center;
+}
+#play svg {
+    position: absolute;
+    pointer-events: none;
+    transform: rotate(-90deg);
+}
+#play img {
+    cursor: pointer;
+}
+#play-time {
+    color: #d7adff;
+    font-size: 65px;
+}
+#video {
+    position: fixed;
+    z-index: -1;
+}

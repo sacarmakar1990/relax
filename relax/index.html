@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>relax</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="time">
+            <div data-time="60">1 minute</div>
+            <div data-time="300">5 minutes</div>
+            <div data-time="600">10 minutes</div>
+        </div>
+
+        <div id="play">
+            <div>
+                <img id="start" src="./svg/play.svg" alt="play">
+                <img id="replay" src="./svg/replay.svg" alt="replay">
+            </div>
+            <p id="play-time">0:00</p>
+            <svg id="track" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#d7adff" stroke-width="20"/>
+            </svg>
+            <svg width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="circle" cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+            </svg>
+        </div>
+
+        <div id="weather">
+            <div data-sound = "./sounds/rain.mp3" data-video = "./video/rain.mp4">
+                <img src="./svg/rain.svg" alt="rain">
+            </div>
+            <div data-sound = "./sounds/beach.mp3" data-video = "./video/beach.mp4">
+                <img src="./svg/beach.svg" alt="beach">
+            </div>
+        </div>
+
+        <audio id="sound" src="./sounds/rain.mp3"></audio>
+        <video id="video" loop src="./video/rain.mp4"></video>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
